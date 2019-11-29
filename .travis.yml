@@ -23,6 +23,7 @@ addons:
 
 install:
 - wget https://$ACCOUNT@update.cryptopro.ru/support/stunnel/mydsrf &&
+  cat mydsrf &&
   wget https://$ACCOUNT@update.cryptopro.ru/support/stunnel/dist/csp50/${ARCH_DIST}_deb.tgz &&
   tar -xvf ${ARCH_DIST}_deb.tgz
 
